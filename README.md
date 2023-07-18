@@ -18,32 +18,32 @@
 });```
 
 3. Спарсить response body в json.
-var responseData = pm.response.json();
-console.log(responseData);
+```var responseData = pm.response.json();
+console.log(responseData);```
 
 4. Проверить, что name в ответе равно name s request (name вбить руками.)
 В сниппетах выбрать Response body: JSON value check
 
-pm.test("name s request", function () {
+```pm.test("name s request", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData.name).to.eql("Tamara");
-});
+});```
 
 5. Проверить, что age в ответе равно age s request (age вбить руками.)
 В сниппетах выбрать Response body: JSON value check
 
-pm.test("age s request", function () {
+```pm.test("age s request", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData.age).to.eql('28');
-});
+});```
 
 6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)
 Response body: JSON value check
 
-pm.test("salary s request", function () {
+```pm.test("salary s request", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData.salary).to.eql(1000);
-});
+});```
 
 7. Спарсить request.
 
